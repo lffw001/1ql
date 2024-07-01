@@ -72,9 +72,6 @@ def getJsonConfig(name):
 def randomint(len):
     return random.randint(10 ** (len - 1), 10 ** len - 1)
 
-def randomint(max, min=0):
-    return random.randint(min, max)
-
 def calculate_md5(input_string):
     md5_hash = hashlib.md5()
     md5_hash.update(input_string.encode())
@@ -84,4 +81,4 @@ def getUUID():
     return str(uuid.uuid4())
 
 if __name__ == '__main__':
-    print(gettime())
+    print(getUUID())
